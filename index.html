@@ -1,43 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" >
-
+<html lang=en>
 <head>
-  <meta charset="UTF-8">
-  <title>Caesar cipher</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="core.js"></script>
-<script>
-  document.documentElement.setAttribute('data-theme','dark')
-</script>
-  
-<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic,400italic,500italic,700italic'>
-<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic'>
-<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500,600,700,900'>
-<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic'>
-<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic'>
-<link rel='stylesheet' href='./basic.css'>
-
-  
-  
+<meta charset=UTF-8>
+<title>Caesar cipher</title>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<script src=core.js></script>
+<script>document.documentElement.setAttribute("data-theme","book");</script>
+<link rel=stylesheet href=./basic.css>
 </head>
-
 <body>
-	<h1>Caesar cipher &lt;shift cipher></h1>
-	<h2>ROT* system</h2>
-	<textarea rows="8" id="result-textarea"></textarea>
-	<label for="key">
-        <span>ROT:</span>
-      </label>
-      <select style="color:Black" name="shift" id="key">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option selected="selected">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
-
-        <center><button id="encrypt" onclick="szyfruj()" class="example_a" type="submit">Encrypt</button>
-        <button id="decrypt" onclick="deszyfruj()" class="example_a" type="submit">Decrypt</button></center>
+<h1>Caesar cipher</h1>
+<h2>ROT* system</h2>
+<textarea rows=8 id=result-textarea></textarea>
+<label for=key>
+<span>ROT:</span>
+</label>
+<select style=color:Black name=shift id=key>
+<option value=1>1</option>
+<option value=2>2</option>
+<option selected=selected>3</option>
+<option value=4>4</option>
+<option value=5>5</option>
+</select>
+<center><button id=encrypt onclick=szyfruj() class=example_a type=submit>Encrypt</button>
+<button id=decrypt onclick=deszyfruj() class=example_a type=submit>Decrypt</button></center>
 </body>
-
 </html>
