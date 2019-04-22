@@ -43,7 +43,7 @@ textarea {
   margin-bottom: 1em;
   padding: 10px 8px;
   box-sizing: border-box;
-  white-space:pre-wrap;
+  white-space:normal;
   resize: none;
 }
 
