@@ -21,3 +21,10 @@ function deszyfruj() {
 			}
 			document.getElementById('result-textarea').value = y;
 			}
+
+function reset() {
+    var ta = document.getElementById('result-textarea');
+    if (!ta.value || ta.value != ta.defaultValue && confirm('Are you sure?')) {
+        ta.value = ta.defaultValue;
+    }
+}
