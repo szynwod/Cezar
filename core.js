@@ -1,3 +1,9 @@
+function copy() {
+  var copyText = document.getElementById("result-textarea");
+  copyText.select();
+  document.execCommand("copy");
+}
+
 function szyfruj() {	
 			y='';
 			p='';
