@@ -12,6 +12,7 @@
 <h2>ROT* system</h2>
 <input type="button" value="Reset" style="float: right;" onclick="reset();">
 <input type="button" value="Copy" style="float: right;" onclick="copy();">
+<input type="button" value="Save" style="float: right;" onclick="save();">
 <textarea rows="8" cols="80" id=result-textarea></textarea>
 <label for=key>
 <span>ROT:</span>
@@ -25,5 +26,19 @@
 </select>
 <center><button id=encrypt onclick=szyfruj() class=example_a type=submit>Encrypt</button>
 <button id=decrypt onclick=deszyfruj() class=example_a type=submit>Decrypt</button></center>
+<script>
+
+function save() {
+var data = document.getElementById("result-textarea").value;
+var c = document.createElement("a");
+c.download = "user-text.txt";
+
+var t = new Blob([data], {
+type: "text/plain"
+});
+c.href = window.URL.createObjectURL(t);
+c.click();
+}
+</script>
 </body>
 </html>
